@@ -1,7 +1,14 @@
+import { usNavyNoDecoRepetGroup } from './tables/usnavy-rev7'
 import { IDive } from './types/interfaces';
 
 export const noDecompressionLimit = ({ depth, bottomTime }: IDive) => {
-  return `the no decompression limit for ${bottomTime} minutes at ${depth} is ABC minutes`;
+  usNavyNoDecoRepetGroup.data.forEach((element: any) => {
+    const result = element.values.find((schedule: any) => {
+      return schedule.minfsw <= depth && depth <= schedule.maxfsw 
+    })
+    console.log(result)
+  });
+  return { noDecompressionLimit: '' }
 };
 
 export const groupLetter = ({ depth, bottomTime }: IDive) => {

@@ -3,9 +3,9 @@ import { groupLetter, noDecompressionLimit } from '../dive';
 test('noDecompressionLimit', () => {
   const dive = {
     bottomTime: 300,
-    depth: 300
+    depth: 150
   };
-  expect(noDecompressionLimit(dive)).toBe('the no decompression limit for 300 minutes at 300 is ABC minutes');
+  expect(noDecompressionLimit(dive)).toBe({ noDecompressionLimit: 5 });
 });
 
 test('groupLetter', () => {

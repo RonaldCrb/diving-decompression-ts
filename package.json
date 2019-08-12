@@ -1,0 +1,25 @@
+{
+  "name": "diving-decompression",
+  "version": "1.0.0",
+  "description": "Exposes methods for defining/calculating diving decompression schedules/protocols based on the US Navy dive manual revision 7",
+  "main": "out/index.js",
+  "typings": "out/index.d.ts",
+  "scripts": {
+    "prepublish": "npm run compile",
+    "compile": "rimraf out && tsc",
+    "preinstall": "npm run compile"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ron"
+  },
+  "keywords": [
+    "commercial",
+    "diving",
+    "decompression",
+    "schedule",
+    "protocol"
+  ],
+  "author": "Ron Alonzo <alonzo.ronald@gmail.com>",
+  "license": "MIT"
+}

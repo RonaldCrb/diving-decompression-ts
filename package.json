@@ -1,17 +1,29 @@
 {
   "name": "diving-decompression",
   "version": "1.0.0",
+  "author": "Ron Alonzo <alonzo.ronald@gmail.com>",
+  "homepage": "https://github.com/RonaldCrb/diving-decompression",
+  "bugs": {
+    "url": "https://github.com/RonaldCrb/diving-decompression/issues",
+    "email": "alonzo.ronald@gmail.com"
+  },
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "description": "Exposes methods for defining/calculating diving decompression schedules/protocols based on the US Navy dive manual revision 7",
-  "main": "out/index.js",
-  "typings": "out/index.d.ts",
   "scripts": {
-    "prepublish": "npm run compile",
-    "compile": "rimraf out && tsc",
-    "preinstall": "npm run compile"
+    "prepare": "npm run build",
+    "prepublishOnly": "npm test && npm run lint",
+    "preversion": "npm run lint",
+    "version": "npm run format && git add -A src",
+    "postversion": "git push && git push --tags",
+    "build": "tsc",
+    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
+    "lint": "tslint -p tsconfig.json",
+    "test": "jest --config jestconfig.json"
   },
   "repository": {
     "type": "git",
-    "url": "ron"
+    "url": "git+https://github.com/RonaldCrb/diving-decompression"
   },
   "keywords": [
     "commercial",
@@ -20,6 +32,17 @@
     "schedule",
     "protocol"
   ],
-  "author": "Ron Alonzo <alonzo.ronald@gmail.com>",
-  "license": "MIT"
+  "files": [
+    "lib /**/*"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^24.0.17",
+    "jest": "^24.8.0",
+    "prettier": "^1.18.2",
+    "ts-jest": "^24.0.2",
+    "tslint": "^5.18.0",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^3.5.3"
+  }
 }

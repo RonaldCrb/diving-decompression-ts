@@ -1,1 +1,5 @@
-out
+# ignore compiled code
+/lib
+
+# ignore dependencies directory
+node_modules

@@ -1,4 +1,6 @@
-export const usNavyNoDecoRepetGroup = {
+import { ITable } from '../types/interfaces'
+
+export const usNavyNoDecoRepetGroup: ITable = {
   tableCode: 'USN-NDL/RG',
   tableName:
     'US Navy no decompression table revision 7 - No-Decompression Limits and Repetitive Group Designators for No-Decompression Air Dives',

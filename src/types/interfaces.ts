@@ -16,3 +16,9 @@ export interface IRow {
   noStopLimit: number | string;
   values: IGroup[];
 }
+
+export interface ITable {
+  tableCode: string,
+  tableName: string;
+  tableData: IRow[];
+}

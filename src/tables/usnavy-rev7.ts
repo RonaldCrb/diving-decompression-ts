@@ -1,11 +1,11 @@
 export const usNavyNoDecoRepetGroup = {
   "tableCode": "USN-NDL/RG",
   "tableName": "US Navy no decompression table revision 7 - No-Decompression Limits and Repetitive Group Designators for No-Decompression Air Dives",
-  "data": [
+  "tableData": [
     { "minfsw": 0,
       "maxfsw": 10,
       "unlimited": true, 
-      "noStopLimit": 43200,
+      "noStopLimit": "unlimited",
       "values": [
         { "groupLetter": "A", "minTime": 0, "maxTime": 57 },
         {
@@ -39,7 +39,7 @@ export const usNavyNoDecoRepetGroup = {
       "minfsw": 11,
       "maxfsw": 15,
       "unlimited": true,
-      "noStopLimit": 43200,
+      "noStopLimit": "unlimited",
       "values": [
         {
           "groupLetter": "A",
@@ -92,7 +92,7 @@ export const usNavyNoDecoRepetGroup = {
       "minfsw": 16,
       "maxfsw": 20,
       "unlimited": true,
-      "noStopLimit": 43200,
+      "noStopLimit": "unlimited",
       "values": [
         {
           "groupLetter": "A",

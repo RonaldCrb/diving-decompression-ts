@@ -1,16 +1,32 @@
+import _ from 'lodash'
 import { usNavyNoDecoRepetGroup } from './tables/usnavy-rev7'
-import { IDive } from './types/interfaces';
+import { IDive, IGroup, IRow } from './types/interfaces';
 
 export const noDecompressionLimit = ({ depth, bottomTime }: IDive) => {
-  usNavyNoDecoRepetGroup.data.forEach((element: any) => {
-    const result = element.values.find((schedule: any) => {
-      return schedule.minfsw <= depth && depth <= schedule.maxfsw 
-    })
-    console.log(result)
-  });
-  return { noDecompressionLimit: '' }
+  const row: IRow | undefined = _.find(usNavyNoDecoRepetGroup.tableData, (element: IRow) => {
+    return element.minfsw <= depth && depth <= element.maxfsw
+  })
+  if(row) {
+    return row.noStopLimit
+  } else {
+    return undefined
+  }
 };
 
 export const groupLetter = ({ depth, bottomTime }: IDive) => {
-  return `the group letter for ${bottomTime} minutes at ${depth} is X`;
+  const row: IRow | undefined = _.find(usNavyNoDecoRepetGroup.tableData, (element: IRow) => {
+    return element.minfsw <= depth && depth <= element.maxfsw
+  })
+  if (row) {
+    const group: IGroup | undefined = _.find(row.values, (element: IGroup) => {
+      return element.minTime <= bottomTime && bottomTime <= element.maxTime
+    })
+    if (group) {
+      return group.groupLetter
+    } else {
+      return undefined
+    }
+  } else {
+    return undefined
+  }
 };

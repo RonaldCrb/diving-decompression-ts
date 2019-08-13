@@ -4,7 +4,7 @@ export interface IDive {
 }
 
 export interface IGroup {
-  groupLetter: string; 
+  groupLetter: string;
   minTime: number;
   maxTime: number;
 }

@@ -164,7 +164,7 @@ export const usNavyNoDecoRepetGroup: ITable = {
       minfsw: 21,
       maxfsw: 25,
       unlimited: false,
-      noStopLimit: 595,
+      noStopLimit: 1105,
       values: [
         {
           groupLetter: 'A',
@@ -239,7 +239,12 @@ export const usNavyNoDecoRepetGroup: ITable = {
         {
           groupLetter: 'O',
           minTime: 470,
-          maxTime: 595,
+          maxTime: 992,
+        },
+        {
+          groupLetter: 'Z',
+          minTime: 993,
+          maxTime: 1102,
         },
       ],
     },
@@ -581,7 +586,7 @@ export const usNavyNoDecoRepetGroup: ITable = {
       ],
     },
     {
-      minfsw: 45,
+      minfsw: 46,
       maxfsw: 50,
       unlimited: false,
       noStopLimit: 92,
@@ -722,10 +727,10 @@ export const usNavyNoDecoRepetGroup: ITable = {
       ],
     },
     {
-      minfsw: 55,
+      minfsw: 56,
       maxfsw: 60,
       unlimited: false,
-      noStopLimit: 60,
+      noStopLimit: 63,
       values: [
         {
           groupLetter: 'A',
@@ -780,7 +785,7 @@ export const usNavyNoDecoRepetGroup: ITable = {
         {
           groupLetter: 'K',
           minTime: 58,
-          maxTime: 60,
+          maxTime: 63,
         },
       ],
     },
@@ -909,7 +914,7 @@ export const usNavyNoDecoRepetGroup: ITable = {
       minfsw: 81,
       maxfsw: 90,
       unlimited: false,
-      noStopLimit: 30,
+      noStopLimit: 33,
       values: [
         {
           groupLetter: 'A',
@@ -949,65 +954,17 @@ export const usNavyNoDecoRepetGroup: ITable = {
         {
           groupLetter: 'H',
           minTime: 25,
-          maxTime: 38,
+          maxTime: 28,
         },
         {
           groupLetter: 'I',
           minTime: 29,
-          maxTime: 30,
-        },
-      ],
-    },
-    {
-      minfsw: 81,
-      maxfsw: 90,
-      unlimited: false,
-      noStopLimit: 30,
-      values: [
-        {
-          groupLetter: 'A',
-          minTime: 0,
-          maxTime: 4,
+          maxTime: 31,
         },
         {
-          groupLetter: 'B',
-          minTime: 5,
-          maxTime: 7,
-        },
-        {
-          groupLetter: 'C',
-          minTime: 8,
-          maxTime: 11,
-        },
-        {
-          groupLetter: 'D',
-          minTime: 12,
-          maxTime: 14,
-        },
-        {
-          groupLetter: 'E',
-          minTime: 15,
-          maxTime: 17,
-        },
-        {
-          groupLetter: 'F',
-          minTime: 18,
-          maxTime: 21,
-        },
-        {
-          groupLetter: 'G',
-          minTime: 22,
-          maxTime: 24,
-        },
-        {
-          groupLetter: 'H',
-          minTime: 25,
-          maxTime: 38,
-        },
-        {
-          groupLetter: 'I',
-          minTime: 29,
-          maxTime: 30,
+          groupLetter: 'J',
+          minTime: 31,
+          maxTime: 33,
         },
       ],
     },
@@ -1149,7 +1106,7 @@ export const usNavyNoDecoRepetGroup: ITable = {
       minfsw: 121,
       maxfsw: 130,
       unlimited: false,
-      noStopLimit: 10,
+      noStopLimit: 12,
       values: [
         {
           groupLetter: 'A',
@@ -1174,7 +1131,12 @@ export const usNavyNoDecoRepetGroup: ITable = {
         {
           groupLetter: 'E',
           minTime: 10,
-          maxTime: 10,
+          maxTime: 11,
+        },
+        {
+          groupLetter: 'F',
+          minTime: 12,
+          maxTime: 12,
         },
       ],
     },
@@ -1215,16 +1177,11 @@ export const usNavyNoDecoRepetGroup: ITable = {
       minfsw: 141,
       maxfsw: 150,
       unlimited: false,
-      noStopLimit: 5,
+      noStopLimit: 8,
       values: [
         {
-          groupLetter: 'A',
-          minTime: 0,
-          maxTime: 2,
-        },
-        {
           groupLetter: 'B',
-          minTime: 2,
+          minTime: 0,
           maxTime: 3,
         },
         {
@@ -1232,13 +1189,51 @@ export const usNavyNoDecoRepetGroup: ITable = {
           minTime: 4,
           maxTime: 5,
         },
+        {
+          groupLetter: 'D',
+          minTime: 6,
+          maxTime: 7,
+        },
+        {
+          groupLetter: 'E',
+          minTime: 8,
+          maxTime: 8,
+        },
+      ],
+    },
+    {
+      minfsw: 151,
+      maxfsw: 160,
+      unlimited: false,
+      noStopLimit: 7,
+      values: [
+        {
+          groupLetter: 'B',
+          minTime: 0,
+          maxTime: 3,
+        },
+        {
+          groupLetter: 'C',
+          minTime: 4,
+          maxTime: 5,
+        },
+        {
+          groupLetter: 'D',
+          minTime: 6,
+          maxTime: 6,
+        },
+        {
+          groupLetter: 'E',
+          minTime: 7,
+          maxTime: 7,
+        },
       ],
     },
     {
       minfsw: 161,
       maxfsw: 170,
       unlimited: false,
-      noStopLimit: 5,
+      noStopLimit: 6,
       values: [
         {
           groupLetter: 'C',
@@ -1247,8 +1242,8 @@ export const usNavyNoDecoRepetGroup: ITable = {
         },
         {
           groupLetter: 'D',
-          minTime: 4,
-          maxTime: 5,
+          minTime: 5,
+          maxTime: 6,
         },
       ],
     },
@@ -1256,7 +1251,7 @@ export const usNavyNoDecoRepetGroup: ITable = {
       minfsw: 171,
       maxfsw: 180,
       unlimited: false,
-      noStopLimit: 5,
+      noStopLimit: 6,
       values: [
         {
           groupLetter: 'C',
@@ -1265,8 +1260,13 @@ export const usNavyNoDecoRepetGroup: ITable = {
         },
         {
           groupLetter: 'D',
-          minTime: 4,
+          minTime: 5,
           maxTime: 5,
+        },
+        {
+          groupLetter: 'E',
+          minTime: 6,
+          maxTime: 6,
         },
       ],
     },

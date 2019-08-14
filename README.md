@@ -44,7 +44,7 @@ const gl = groupLetter(dive);
 console.log(gl)
 ```
 
-first you need your dive data to be in a configuration object; if you are diving a single dive, you must specify these parameters in the configuration object:
+the other possible configuration object; if you are diving a repetitive dive, you must specify these parameters in the configuration object:
 
 1. _depth_ : number (depth of the dive expressed in feet of sea water) 
 2. _bottomTime_ : number (the time from leaving surface to leaving bottom expressed in minutes)

@@ -17,7 +17,12 @@ npm i dive-decompression
 
 ## Usage
 
-_diving-decompression_ exposes 2 methods
+first you need your dive data to be in a configuration object; if you are diving a single dive, you must specify these parameters in the configuration object:
+
+1. _depth_ : number (depth of the dive expressed in feet of sea water) 
+2. _bottomTime_ : number (the time from leaving surface to leaving bottom expressed in minutes)
+
+_diving-decompression_ exposes 2 methods compatible with this configuration object
 
 To find the no-decompression-limit for air dives use:
 
@@ -37,4 +42,30 @@ import { groupLetter } from 'diving-decompression'
 const dive = { depth: 123, bottomTime: 15 };
 const gl = groupLetter(dive);
 console.log(gl)
+```
+
+first you need your dive data to be in a configuration object; if you are diving a single dive, you must specify these parameters in the configuration object:
+
+1. _depth_ : number (depth of the dive expressed in feet of sea water) 
+2. _bottomTime_ : number (the time from leaving surface to leaving bottom expressed in minutes)
+3. _sit_ : number (surface interval time expressed in minutes)
+4. _nextTime_ : number (next planned bottom time expressed in minutes)
+5. _nextDepth_ : number (next planned depth expressed in feet of sea water)
+
+_diving-decompression_ exposes 1 method compatible with this configuration object
+
+To find the repet dive letter use:
+
+```
+import { repetLetter } from 'diving-decompression'
+...
+const dive = { 
+  depth: 123, 
+  bottomTime: 15 
+  sit: 123
+  nextDepth: 321
+  nextTime: 123
+};
+const rl = repetLetter(dive);
+console.log(rl)
 ```

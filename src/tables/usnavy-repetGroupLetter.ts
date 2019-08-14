@@ -1,4 +1,6 @@
-export const usNavyRepetGroupLetter = {
+import { ITableRgl } from '../types/interfaces'
+
+const usNavyRepetGroupLetter: ITableRgl = {
   tableCode: 'USN-AIR-SIT/RGL',
   tableName: 'US Navy no decompression table revision 7 - Residual Nitrogen Time table for repetitive Air Dives',
   tableData: [
@@ -141,5 +143,4 @@ export const usNavyRepetGroupLetter = {
   ] 
 }
 
-
-
+export default usNavyRepetGroupLetter

@@ -85,3 +85,6 @@ const divePlan = {
 const rnt = residualNitrogenTime(divePlan);
 console.log(rnt)
 ```
+
+## License
+[MPL-2.0](https://choosealicense.com/licenses/mpl-2.0/)

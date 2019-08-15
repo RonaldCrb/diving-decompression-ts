@@ -1,4 +1,4 @@
-import { ITableNdl } from '../types/interfaces'
+import { ITableNdl } from '../types/interfaces';
 
 const usNavyNoDecoRepetGroup: ITableNdl = {
   tableCode: 'USN-AIR-NDL/GL',
@@ -1291,4 +1291,4 @@ const usNavyNoDecoRepetGroup: ITableNdl = {
   ],
 };
 
-export default usNavyNoDecoRepetGroup
+export default usNavyNoDecoRepetGroup;

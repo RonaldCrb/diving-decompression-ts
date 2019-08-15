@@ -1,4 +1,4 @@
-import { ITableRgl } from '../types/interfaces'
+import { ITableRgl } from '../types/interfaces';
 
 const usNavyRepetGroupLetter: ITableRgl = {
   tableCode: 'USN-AIR-SIT/RGL',
@@ -140,7 +140,7 @@ const usNavyRepetGroupLetter: ITableRgl = {
     { groupLetter: 'O', minTime: 680, maxTime: 733, repetLetter: 'C' },
     { groupLetter: 'O', minTime: 734, maxTime: 810, repetLetter: 'B' },
     { groupLetter: 'O', minTime: 811, maxTime: 950, repetLetter: 'A' },
-  ] 
-}
+  ],
+};
 
-export default usNavyRepetGroupLetter
+export default usNavyRepetGroupLetter;

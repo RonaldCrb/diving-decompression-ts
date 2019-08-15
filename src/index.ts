@@ -1,7 +1,7 @@
 import _ from 'lodash';
 import usNavyNoDecoRepetGroup from './tables/usnavy-nodeco-rev7';
-import usNavyRepetGroupLetter from './tables/usnavy-repetGroupLetter'
-import usNavyResidualNitrogenTime from './tables/usnavy-rnt'
+import usNavyRepetGroupLetter from './tables/usnavy-repetGroupLetter';
+import usNavyResidualNitrogenTime from './tables/usnavy-rnt';
 import { IDive, IDivePlan, IGroup, IRnt, IRowNdl, IRowRgl, IRowRnt } from './types/interfaces';
 
 export const noDecompressionLimit = ({ depth }: IDive): number | string | undefined => {
@@ -43,10 +43,10 @@ export const repetLetter = ({ bottomTime, depth, sit }: IDivePlan): string | und
     });
     if (group) {
       const repet: IRowRgl | undefined = _.find(usNavyRepetGroupLetter.tableData, (element: IRowRgl): boolean => {
-        return element.groupLetter === group.groupLetter && element.minTime <= sit && sit <= element.maxTime
+        return element.groupLetter === group.groupLetter && element.minTime <= sit && sit <= element.maxTime;
       });
       if (repet) {
-        return repet.repetLetter
+        return repet.repetLetter;
       } else {
         return undefined;
       }
@@ -58,7 +58,13 @@ export const repetLetter = ({ bottomTime, depth, sit }: IDivePlan): string | und
   }
 };
 
-export const residualNitrogenTime = ({ bottomTime, depth, sit, nextDepth, nextTime }: IDivePlan): string | undefined => {
+export const residualNitrogenTime = ({
+  bottomTime,
+  depth,
+  sit,
+  nextDepth,
+  nextTime,
+}: IDivePlan): string | undefined => {
   const row: IRowNdl | undefined = _.find(usNavyNoDecoRepetGroup.tableData, (element: IRowNdl): boolean => {
     return element.minfsw <= depth && depth <= element.maxfsw;
   });
@@ -68,20 +74,23 @@ export const residualNitrogenTime = ({ bottomTime, depth, sit, nextDepth, nextTi
     });
     if (group) {
       const repet: IRowRgl | undefined = _.find(usNavyRepetGroupLetter.tableData, (element: IRowRgl): boolean => {
-        return element.groupLetter === group.groupLetter && element.minTime <= sit && sit <= element.maxTime
+        return element.groupLetter === group.groupLetter && element.minTime <= sit && sit <= element.maxTime;
       });
       if (repet) {
-        const column: IRowRnt | undefined = _.find(usNavyResidualNitrogenTime.tableData, (element: IRowRnt): boolean => {
-          return element.repetLetter === repet.repetLetter
-        });
+        const column: IRowRnt | undefined = _.find(
+          usNavyResidualNitrogenTime.tableData,
+          (element: IRowRnt): boolean => {
+            return element.repetLetter === repet.repetLetter;
+          },
+        );
         if (column) {
           const rnt: any = _.find(column.rnt, (element: IRnt): boolean => {
-            return element.minDepth <= nextDepth && nextDepth <= element.maxDepth
+            return element.minDepth <= nextDepth && nextDepth <= element.maxDepth;
           });
           if (rnt && rnt.rnt === 0) {
-            return usNavyResidualNitrogenTime.tableNote9981
+            return usNavyResidualNitrogenTime.tableNote9981;
           } else if (rnt && rnt.rnt > 0) {
-            return rnt.rnt
+            return rnt.rnt;
           }
         } else {
           return undefined;

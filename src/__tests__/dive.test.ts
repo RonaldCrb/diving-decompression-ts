@@ -85,7 +85,6 @@ test('groupLetter 1500/25 undefined', () => {
   expect(groupLetter(dive)).toBe(undefined);
 });
 
-
 // **********************************************************************************************
 // repetLetter 5 Tests
 
@@ -95,7 +94,7 @@ test('repetLetter 5/147 C', () => {
     depth: 147,
     sit: 250,
     nextDepth: 28,
-    nextTime: 25
+    nextTime: 25,
   };
   expect(repetLetter(dive)).toBe('A');
 });
@@ -106,7 +105,7 @@ test('repetLetter 198/24 J', () => {
     depth: 24,
     sit: 250,
     nextDepth: 28,
-    nextTime: 25
+    nextTime: 25,
   };
   expect(repetLetter(dive)).toBe('F');
 });
@@ -117,7 +116,7 @@ test('repetLetter 44/60 H', () => {
     depth: 60,
     sit: 2500,
     nextDepth: 28,
-    nextTime: 25
+    nextTime: 25,
   };
   expect(repetLetter(dive)).toBe(undefined);
 });
@@ -128,7 +127,7 @@ test('repetLetter 200/124 undefined', () => {
     depth: 124,
     sit: 250,
     nextDepth: 28,
-    nextTime: 25
+    nextTime: 25,
   };
   expect(repetLetter(dive)).toBe(undefined);
 });
@@ -139,7 +138,7 @@ test('repetLetter 1500/25 undefined', () => {
     depth: 25,
     sit: 250,
     nextDepth: 28,
-    nextTime: 25
+    nextTime: 25,
   };
   expect(repetLetter(dive)).toBe(undefined);
 });
@@ -153,7 +152,7 @@ test('residual nitrogen time 5/147 C', () => {
     depth: 147,
     sit: 250,
     nextDepth: 28,
-    nextTime: 25
+    nextTime: 25,
   };
   expect(residualNitrogenTime(dive)).toBe(18);
 });
@@ -164,7 +163,7 @@ test('residual nitrogen time 198/24 J', () => {
     depth: 24,
     sit: 250,
     nextDepth: 28,
-    nextTime: 25
+    nextTime: 25,
   };
   expect(residualNitrogenTime(dive)).toBe(77);
 });
@@ -175,7 +174,7 @@ test('residual nitrogen time 44/60 H', () => {
     depth: 60,
     sit: 22,
     nextDepth: 190,
-    nextTime: 25
+    nextTime: 25,
   };
   expect(residualNitrogenTime(dive)).toBe(14);
 });
@@ -186,7 +185,7 @@ test('residual nitrogen time 200/124 undefined', () => {
     depth: 124,
     sit: 350,
     nextDepth: 128,
-    nextTime: 25
+    nextTime: 25,
   };
   expect(residualNitrogenTime(dive)).toBe(undefined);
 });
@@ -197,7 +196,7 @@ test('residual nitrogen time 1500/25 undefined', () => {
     depth: 25,
     sit: 250,
     nextDepth: 69,
-    nextTime: 25
+    nextTime: 25,
   };
   expect(residualNitrogenTime(dive)).toBe(25);
 });

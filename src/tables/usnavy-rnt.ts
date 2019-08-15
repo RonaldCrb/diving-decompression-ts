@@ -1,9 +1,8 @@
-import { ITableRnt } from '../types/interfaces'
+import { ITableRnt } from '../types/interfaces';
 
 const usNavyResidualNitrogenTime: ITableRnt = {
   tableCode: 'USN-AIR-RNT',
-  tableName:
-    'US Navy no decompression table revision 7 - Residual Nitrogen Time for No-Decompression Air Dives',
+  tableName: 'US Navy no decompression table revision 7 - Residual Nitrogen Time for No-Decompression Air Dives',
   tableNote9981: `At depths of 10, 15, and 20 fsw, some of the higher repetitive groups do not
 have a defined residual nitrogen time. These groups are marked with a double
 asterisk in the lower half of Table 9-8. The RNT is undefined because the tissue
@@ -53,7 +52,7 @@ dive in Group N regardless of the duration of the 20 fsw dive. `,
         { minDepth: 161, maxDepth: 170, rnt: 3 },
         { minDepth: 171, maxDepth: 180, rnt: 3 },
         { minDepth: 181, maxDepth: 190, rnt: 3 },
-      ]
+      ],
     },
     {
       repetLetter: 'B',
@@ -82,7 +81,7 @@ dive in Group N regardless of the duration of the 20 fsw dive. `,
         { minDepth: 161, maxDepth: 170, rnt: 3 },
         { minDepth: 171, maxDepth: 180, rnt: 3 },
         { minDepth: 181, maxDepth: 190, rnt: 3 },
-      ]
+      ],
     },
     {
       repetLetter: 'C',
@@ -111,7 +110,7 @@ dive in Group N regardless of the duration of the 20 fsw dive. `,
         { minDepth: 161, maxDepth: 170, rnt: 7 },
         { minDepth: 171, maxDepth: 180, rnt: 6 },
         { minDepth: 181, maxDepth: 190, rnt: 6 },
-      ]
+      ],
     },
     {
       repetLetter: 'D',
@@ -140,7 +139,7 @@ dive in Group N regardless of the duration of the 20 fsw dive. `,
         { minDepth: 161, maxDepth: 170, rnt: 8 },
         { minDepth: 171, maxDepth: 180, rnt: 8 },
         { minDepth: 181, maxDepth: 190, rnt: 8 },
-      ]
+      ],
     },
     {
       repetLetter: 'E',
@@ -169,7 +168,7 @@ dive in Group N regardless of the duration of the 20 fsw dive. `,
         { minDepth: 161, maxDepth: 170, rnt: 10 },
         { minDepth: 171, maxDepth: 180, rnt: 10 },
         { minDepth: 181, maxDepth: 190, rnt: 9 },
-      ]
+      ],
     },
     {
       repetLetter: 'F',
@@ -198,7 +197,7 @@ dive in Group N regardless of the duration of the 20 fsw dive. `,
         { minDepth: 161, maxDepth: 170, rnt: 12 },
         { minDepth: 171, maxDepth: 180, rnt: 11 },
         { minDepth: 181, maxDepth: 190, rnt: 11 },
-      ]
+      ],
     },
     {
       repetLetter: 'G',
@@ -227,7 +226,7 @@ dive in Group N regardless of the duration of the 20 fsw dive. `,
         { minDepth: 161, maxDepth: 170, rnt: 14 },
         { minDepth: 171, maxDepth: 180, rnt: 13 },
         { minDepth: 181, maxDepth: 190, rnt: 12 },
-      ]
+      ],
     },
     {
       repetLetter: 'H',
@@ -256,7 +255,7 @@ dive in Group N regardless of the duration of the 20 fsw dive. `,
         { minDepth: 161, maxDepth: 170, rnt: 15 },
         { minDepth: 171, maxDepth: 180, rnt: 14 },
         { minDepth: 181, maxDepth: 190, rnt: 14 },
-      ]
+      ],
     },
     {
       repetLetter: 'I',
@@ -285,7 +284,7 @@ dive in Group N regardless of the duration of the 20 fsw dive. `,
         { minDepth: 161, maxDepth: 170, rnt: 17 },
         { minDepth: 171, maxDepth: 180, rnt: 16 },
         { minDepth: 181, maxDepth: 190, rnt: 15 },
-      ]
+      ],
     },
     {
       repetLetter: 'J',
@@ -314,7 +313,7 @@ dive in Group N regardless of the duration of the 20 fsw dive. `,
         { minDepth: 161, maxDepth: 170, rnt: 19 },
         { minDepth: 171, maxDepth: 180, rnt: 18 },
         { minDepth: 181, maxDepth: 190, rnt: 17 },
-      ]
+      ],
     },
     {
       repetLetter: 'K',
@@ -343,7 +342,7 @@ dive in Group N regardless of the duration of the 20 fsw dive. `,
         { minDepth: 161, maxDepth: 170, rnt: 21 },
         { minDepth: 171, maxDepth: 180, rnt: 19 },
         { minDepth: 181, maxDepth: 190, rnt: 18 },
-      ]
+      ],
     },
     {
       repetLetter: 'L',
@@ -372,7 +371,7 @@ dive in Group N regardless of the duration of the 20 fsw dive. `,
         { minDepth: 161, maxDepth: 170, rnt: 22 },
         { minDepth: 171, maxDepth: 180, rnt: 21 },
         { minDepth: 181, maxDepth: 190, rnt: 20 },
-      ]
+      ],
     },
     {
       repetLetter: 'M',
@@ -401,7 +400,7 @@ dive in Group N regardless of the duration of the 20 fsw dive. `,
         { minDepth: 161, maxDepth: 170, rnt: 24 },
         { minDepth: 171, maxDepth: 180, rnt: 23 },
         { minDepth: 181, maxDepth: 190, rnt: 22 },
-      ]
+      ],
     },
     {
       repetLetter: 'N',
@@ -430,7 +429,7 @@ dive in Group N regardless of the duration of the 20 fsw dive. `,
         { minDepth: 161, maxDepth: 170, rnt: 26 },
         { minDepth: 171, maxDepth: 180, rnt: 25 },
         { minDepth: 181, maxDepth: 190, rnt: 23 },
-      ]
+      ],
     },
     {
       repetLetter: 'O',
@@ -459,7 +458,7 @@ dive in Group N regardless of the duration of the 20 fsw dive. `,
         { minDepth: 161, maxDepth: 170, rnt: 28 },
         { minDepth: 171, maxDepth: 180, rnt: 26 },
         { minDepth: 181, maxDepth: 190, rnt: 25 },
-      ]
+      ],
     },
     {
       repetLetter: 'Z',
@@ -488,9 +487,9 @@ dive in Group N regardless of the duration of the 20 fsw dive. `,
         { minDepth: 161, maxDepth: 170, rnt: 30 },
         { minDepth: 171, maxDepth: 180, rnt: 28 },
         { minDepth: 181, maxDepth: 190, rnt: 26 },
-      ]
+      ],
     },
-  ]
-}
+  ],
+};
 
 export default usNavyResidualNitrogenTime;

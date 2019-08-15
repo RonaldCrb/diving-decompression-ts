@@ -12,7 +12,7 @@ the main source for this module is the [US Navy Diving Manual](https://en.wikipe
 ## Installation
 
 ```
-npm i dive-decompression
+npm i diving-decompression
 ```
 
 ## Usage
@@ -52,20 +52,36 @@ the other possible configuration object; if you are diving a repetitive dive, yo
 4. _nextTime_ : number (next planned bottom time expressed in minutes)
 5. _nextDepth_ : number (next planned depth expressed in feet of sea water)
 
-_diving-decompression_ exposes 1 method compatible with this configuration object
+_diving-decompression_ exposes 2 methods compatible with this configuration object
 
-To find the repet dive letter use:
+To find the repetitive dive letter use:
 
 ```
 import { repetLetter } from 'diving-decompression'
 ...
-const dive = { 
+const divePlan = { 
   depth: 123, 
-  bottomTime: 15 
-  sit: 123
-  nextDepth: 321
+  bottomTime: 15, 
+  sit: 123,
+  nextDepth: 321,
   nextTime: 123
 };
-const rl = repetLetter(dive);
+const rl = repetLetter(divePlan);
+console.log(rl)
+```
+
+To find the residual nitrogen time use:
+
+```
+import { residualNitrogenTime } from 'diving-decompression'
+...
+const divePlan = { 
+  depth: 123, 
+  bottomTime: 123, 
+  sit: 123,
+  nextDepth: 123,
+  nextTime: 123
+};
+const rl = residualNitrogenTime(divePlan);
 console.log(rl)
 ```

@@ -26,7 +26,7 @@ _diving-decompression_ exposes 2 methods compatible with this configuration obje
 
 To find the no-decompression-limit for air dives use:
 
-```
+```javascript
 import { noDecompressionLimit } from 'diving-decompression'
 ...
 const dive = { depth: 123, bottomTime: 15 };
@@ -36,7 +36,7 @@ console.log(ndl)
 
 To find the group letter use:
 
-```
+```javascript
 import { groupLetter } from 'diving-decompression'
 ...
 const dive = { depth: 123, bottomTime: 15 };
@@ -56,7 +56,7 @@ _diving-decompression_ exposes 2 methods compatible with this configuration obje
 
 To find the repetitive dive letter use:
 
-```
+```javascript
 import { repetLetter } from 'diving-decompression'
 ...
 const divePlan = { 
@@ -72,7 +72,7 @@ console.log(rl)
 
 To find the residual nitrogen time use:
 
-```
+```javascript
 import { residualNitrogenTime } from 'diving-decompression'
 ...
 const divePlan = { 

@@ -32,9 +32,6 @@
     "schedule",
     "protocol"
   ],
-  "files": [
-    "lib /**/*"
-  ],
   "license": "MIT",
   "devDependencies": {
     "@types/jest": "^24.0.17",

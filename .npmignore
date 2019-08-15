@@ -1,11 +1,1 @@
-# ignore source files
 src
-
-# ignore typescript compiler config
-tsconfig.json
-
-# ignore tslint linter config
-tslint.json
-
-# ignore prettier formater config
-.prettierrc

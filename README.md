@@ -82,6 +82,6 @@ const divePlan = {
   nextDepth: 123,
   nextTime: 123
 };
-const rl = residualNitrogenTime(divePlan);
-console.log(rl)
+const rnt = residualNitrogenTime(divePlan);
+console.log(rnt)
 ```

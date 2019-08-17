@@ -47,7 +47,6 @@ export interface ITableRgl {
 }
 
 // table for residual nitrogen time
-
 export interface IRnt {
   minDepth: number;
   maxDepth: number;
@@ -65,3 +64,38 @@ export interface ITableRnt {
   tableNote9981: string;
   tableData: IRowRnt[];
 }
+
+// table for air decompression
+export interface IDecoStops {
+  depth: number;
+  time: number;
+}
+
+export interface IRowDeco {
+  minTime: number;
+  maxTime: number;
+  airTAT: string;
+  o2TAT: string;
+  ttfs: string;
+  o2cp: number;
+  repetLetter: string;
+  surDo2Recom: boolean;
+  exceptionalExposure: boolean;
+  surDo2Req?: boolean;
+  strictlySurDo2?: boolean
+  airDecoStops: IDecoStops[];
+  o2decoStops: IDecoStops[];
+}
+
+export interface IDecoDepth {
+  minfsw: number;
+  maxfsw: number;
+  rows: IRowDeco[];
+}
+
+export interface ITableAirDeco {
+  tableCode: string;
+  tableName: string;
+  tableData: IDecoDepth[];
+}
+ 

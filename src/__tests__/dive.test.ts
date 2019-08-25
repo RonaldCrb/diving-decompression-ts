@@ -94,7 +94,6 @@ test('repetLetter 5/147 C', () => {
     depth: 147,
     sit: 250,
     nextDepth: 28,
-    nextTime: 25,
   };
   expect(repetLetter(dive)).toBe('A');
 });
@@ -105,7 +104,6 @@ test('repetLetter 198/24 J', () => {
     depth: 24,
     sit: 250,
     nextDepth: 28,
-    nextTime: 25,
   };
   expect(repetLetter(dive)).toBe('F');
 });
@@ -116,7 +114,6 @@ test('repetLetter 44/60 H', () => {
     depth: 60,
     sit: 2500,
     nextDepth: 28,
-    nextTime: 25,
   };
   expect(repetLetter(dive)).toBe(undefined);
 });
@@ -127,7 +124,6 @@ test('repetLetter 200/124 undefined', () => {
     depth: 124,
     sit: 250,
     nextDepth: 28,
-    nextTime: 25,
   };
   expect(repetLetter(dive)).toBe(undefined);
 });
@@ -138,7 +134,6 @@ test('repetLetter 1500/25 undefined', () => {
     depth: 25,
     sit: 250,
     nextDepth: 28,
-    nextTime: 25,
   };
   expect(repetLetter(dive)).toBe(undefined);
 });
@@ -152,7 +147,6 @@ test('residual nitrogen time 5/147 C', () => {
     depth: 147,
     sit: 250,
     nextDepth: 28,
-    nextTime: 25,
   };
   expect(residualNitrogenTime(dive)).toBe(18);
 });
@@ -163,7 +157,6 @@ test('residual nitrogen time 198/24 J', () => {
     depth: 24,
     sit: 250,
     nextDepth: 28,
-    nextTime: 25,
   };
   expect(residualNitrogenTime(dive)).toBe(77);
 });
@@ -174,7 +167,6 @@ test('residual nitrogen time 44/60 H', () => {
     depth: 60,
     sit: 22,
     nextDepth: 190,
-    nextTime: 25,
   };
   expect(residualNitrogenTime(dive)).toBe(14);
 });
@@ -185,7 +177,6 @@ test('residual nitrogen time 200/124 undefined', () => {
     depth: 124,
     sit: 350,
     nextDepth: 128,
-    nextTime: 25,
   };
   expect(residualNitrogenTime(dive)).toBe(undefined);
 });
@@ -196,7 +187,6 @@ test('residual nitrogen time 1500/25 undefined', () => {
     depth: 25,
     sit: 250,
     nextDepth: 69,
-    nextTime: 25,
   };
   expect(residualNitrogenTime(dive)).toBe(25);
 });
@@ -210,7 +200,6 @@ test('decoDive 99/135 decoObject', () => {
     depth: 99,
     sit: 250,
     nextDepth: 69,
-    nextTime: 25,
   };
   expect(decoDive(dive)).toMatchObject({
     minTime: 121,
@@ -235,7 +224,6 @@ test('decoDive 1000/135 => No Table Matched', () => {
     depth: 1000,
     sit: 250,
     nextDepth: 69,
-    nextTime: 25,
   };
   expect(decoDive(dive)).toBe('No Table Matched');
 });
@@ -246,7 +234,6 @@ test('decoDive 100/1305 => no decoObject Matched', () => {
     depth: 100,
     sit: 250,
     nextDepth: 69,
-    nextTime: 25,
   };
   expect(decoDive(dive)).toBe('no decoObject Matched');
 });
@@ -257,7 +244,6 @@ test('decoDive 69/130 => decoObject', () => {
     depth: 69,
     sit: 250,
     nextDepth: 69,
-    nextTime: 25,
   };
   expect(decoDive(dive)).toMatchObject({
     minTime: 121,
@@ -280,7 +266,6 @@ test('decoDive 61/125 => decoObject', () => {
     depth: 61,
     sit: 250,
     nextDepth: 69,
-    nextTime: 25,
   };
   expect(decoDive(dive)).toMatchObject({
     minTime: 121,

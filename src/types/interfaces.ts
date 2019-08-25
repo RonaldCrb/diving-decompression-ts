@@ -3,7 +3,6 @@ export interface IDivePlan {
   bottomTime: number;
   sit: number;
   nextDepth: number;
-  nextTime: number;
 }
 
 export interface IDive {

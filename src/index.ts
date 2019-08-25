@@ -64,7 +64,6 @@ export const residualNitrogenTime = ({
   depth,
   sit,
   nextDepth,
-  nextTime,
 }: IDivePlan): string | undefined => {
   const row: IRowNdl | undefined = _.find(usNavyNoDecoRepetGroup.tableData, (element: IRowNdl): boolean => {
     return element.minfsw <= depth && depth <= element.maxfsw;

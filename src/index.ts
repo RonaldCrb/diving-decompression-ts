@@ -107,24 +107,23 @@ export const residualNitrogenTime = ({
   }
 };
 
-export const decoDive = ({
-  bottomTime,
-  depth,
-}: IDive): IRowDeco | string => {
-  const table: IDecoDepth | undefined = _.find(usNavyAirDecompressionTable.tableData, (element: IDecoDepth): boolean => {
-    return element.minfsw <= depth && depth <= element.maxfsw;
-  });
+export const decoDive = ({ bottomTime, depth }: IDive): IRowDeco | string => {
+  const table: IDecoDepth | undefined = _.find(
+    usNavyAirDecompressionTable.tableData,
+    (element: IDecoDepth): boolean => {
+      return element.minfsw <= depth && depth <= element.maxfsw;
+    },
+  );
   if (table) {
     const decoObject: IRowDeco | undefined = _.find(table.rows, (element: IRowDeco): boolean => {
       return element.minTime <= bottomTime && bottomTime <= element.maxTime;
     });
     if (decoObject) {
-      return decoObject
+      return decoObject;
     } else {
       return 'no decoObject Matched';
     }
   } else {
     return 'No Table Matched';
   }
-}
-
+};

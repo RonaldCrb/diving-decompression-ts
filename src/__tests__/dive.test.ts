@@ -202,7 +202,7 @@ test('residual nitrogen time 1500/25 undefined', () => {
 });
 
 // ****************************************************************************
-// decoDive 5 tests 
+// decoDive 5 tests
 
 test('decoDive 99/135 decoObject', () => {
   const dive = {
@@ -224,19 +224,9 @@ test('decoDive 99/135 decoObject', () => {
     surDo2Req: true,
     strictlySurDo2: true,
     exceptionalExposure: true,
-    airDecoStops: [
-      { depth: 20, time: 461 },
-      { depth: 30, time: 46 },
-      { depth: 40, time: 26 },
-      { depth: 50, time: 3 },
-    ],
-    o2decoStops: [
-      { depth: 20, time: 109 },
-      { depth: 30, time: 23 },
-      { depth: 40, time: 26 },
-      { depth: 50, time: 3 },
-    ],
-  },);
+    airDecoStops: [{ depth: 20, time: 461 }, { depth: 30, time: 46 }, { depth: 40, time: 26 }, { depth: 50, time: 3 }],
+    o2decoStops: [{ depth: 20, time: 109 }, { depth: 30, time: 23 }, { depth: 40, time: 26 }, { depth: 50, time: 3 }],
+  });
 });
 
 test('decoDive 1000/135 => No Table Matched', () => {
@@ -279,13 +269,9 @@ test('decoDive 69/130 => decoObject', () => {
     repetLetter: 'Z',
     surDo2Recom: true,
     exceptionalExposure: true,
-    airDecoStops: [
-      { depth: 20, time: 167 },
-    ],
-    o2decoStops: [
-      { depth: 20, time: 51 },
-    ],
-  },);
+    airDecoStops: [{ depth: 20, time: 167 }],
+    o2decoStops: [{ depth: 20, time: 51 }],
+  });
 });
 
 test('decoDive 61/125 => decoObject', () => {
@@ -306,11 +292,7 @@ test('decoDive 61/125 => decoObject', () => {
     repetLetter: 'Z',
     surDo2Recom: true,
     exceptionalExposure: true,
-    airDecoStops: [
-      { depth: 20, time: 167 },
-    ],
-    o2decoStops: [
-      { depth: 20, time: 51 },
-    ],
+    airDecoStops: [{ depth: 20, time: 167 }],
+    o2decoStops: [{ depth: 20, time: 51 }],
   });
 });

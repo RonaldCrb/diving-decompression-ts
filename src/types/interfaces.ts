@@ -82,7 +82,7 @@ export interface IRowDeco {
   surDo2Recom: boolean;
   exceptionalExposure: boolean;
   surDo2Req?: boolean;
-  strictlySurDo2?: boolean
+  strictlySurDo2?: boolean;
   airDecoStops: IDecoStops[];
   o2decoStops: IDecoStops[];
 }
@@ -98,4 +98,3 @@ export interface ITableAirDeco {
   tableName: string;
   tableData: IDecoDepth[];
 }
- 

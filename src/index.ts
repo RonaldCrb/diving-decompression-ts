@@ -1,8 +1,9 @@
 import _ from 'lodash';
+import usNavyAirDecompressionTable from './tables/usnavy-deco-rev7';
 import usNavyNoDecoRepetGroup from './tables/usnavy-nodeco-rev7';
 import usNavyRepetGroupLetter from './tables/usnavy-repetGroupLetter';
 import usNavyResidualNitrogenTime from './tables/usnavy-rnt';
-import { IDive, IDivePlan, IGroup, IRnt, IRowNdl, IRowRgl, IRowRnt } from './types/interfaces';
+import { IDecoDepth, IDive, IDivePlan, IGroup, IRnt, IRowDeco, IRowNdl, IRowRgl, IRowRnt } from './types/interfaces';
 
 export const noDecompressionLimit = ({ depth }: IDive): number | string | undefined => {
   const row: IRowNdl | undefined = _.find(usNavyNoDecoRepetGroup.tableData, (element: IRowNdl): boolean => {
@@ -105,3 +106,25 @@ export const residualNitrogenTime = ({
     return undefined;
   }
 };
+
+export const decoDive = ({
+  bottomTime,
+  depth,
+}: IDive): IRowDeco | string => {
+  const table: IDecoDepth | undefined = _.find(usNavyAirDecompressionTable.tableData, (element: IDecoDepth): boolean => {
+    return element.minfsw <= depth && depth <= element.maxfsw;
+  });
+  if (table) {
+    const decoObject: IRowDeco | undefined = _.find(table.rows, (element: IRowDeco): boolean => {
+      return element.minTime <= bottomTime && bottomTime <= element.maxTime;
+    });
+    if (decoObject) {
+      return decoObject
+    } else {
+      return 'no decoObject Matched';
+    }
+  } else {
+    return 'No Table Matched';
+  }
+}
+

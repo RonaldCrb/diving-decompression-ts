@@ -59,7 +59,7 @@ this  method returns an object with the following structure.
 {
   minTime: 101, 
   maxTime: 110,
-  ttfs: '2:20', // Total time to surface (string)
+  ttfs: '2:20', // Total time first stop (string)
   airTAT: '520:00', // in water decompression with Air Total Ascent time (string)
   o2TAT: '188:20', // in water decompression with Air/O2 Total Ascent time (string)
   o2cp: 5, // SurDO2 chamber periods required (number)

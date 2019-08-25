@@ -59,12 +59,7 @@ export const repetLetter = ({ bottomTime, depth, sit }: IDivePlan): string | und
   }
 };
 
-export const residualNitrogenTime = ({
-  bottomTime,
-  depth,
-  sit,
-  nextDepth,
-}: IDivePlan): string | undefined => {
+export const residualNitrogenTime = ({ bottomTime, depth, sit, nextDepth }: IDivePlan): string | undefined => {
   const row: IRowNdl | undefined = _.find(usNavyNoDecoRepetGroup.tableData, (element: IRowNdl): boolean => {
     return element.minfsw <= depth && depth <= element.maxfsw;
   });

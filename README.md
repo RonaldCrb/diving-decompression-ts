@@ -53,7 +53,35 @@ const dive = { depth: 100, bottomTime: 135 };
 const decoObject = diveDeco(dive);
 console.log(decoObject)
 ```
-this  method returns an object with all the characteristics of necessary to execute the decompression procedure adequate for the depth and time introduced.
+this  method returns an object with the following structure.
+
+```javascript
+{
+  minTime: 101, 
+  maxTime: 110,
+  ttfs: '2:20', // Total time to surface (string)
+  airTAT: '520:00', // in water decompression with Air Total Ascent time (string)
+  o2TAT: '188:20', // in water decompression with Air/O2 Total Ascent time (string)
+  o2cp: 5, // SurDO2 chamber periods required (number)
+  repetLetter: 'N/A', // Repetitive Letter (string)
+  surDo2Recom: true, // inWater Decompression or SurDO2 recommended (boolean)
+  surDo2Req: true, // Exceptional Exposure, SurDO2 Required (boolean)
+  strictlySurDo2: true, // Exceptional Exposure, Strictly SurDO2 (boolean)
+  exceptionalExposure: true, // Exceptional Exposure, inWater Deco or SurDO2 Required (boolean)
+  airDecoStops: [ // in Water decompression with Air Schedule
+    { depth: 20, time: 433 }, // all air stops depth and time
+    { depth: 30, time: 38 },
+    { depth: 40, time: 25 },
+    { depth: 50, time: 21 },
+  ],
+  o2decoStops: [ // in water decompression with Air/O2 Schedule (O2 for the 30' and 20')
+    { depth: 20, time: 105 }, // O2 stop
+    { depth: 30, time: 19 }, // O2 stop
+    { depth: 40, time: 25 }, // air stop
+    { depth: 50, time: 21 }, // air stop
+  ],
+},
+```
 
 
 the other possible configuration object; if you are diving a repetitive dive, you must specify these parameters in the configuration object:
@@ -75,7 +103,6 @@ const divePlan = {
   bottomTime: 15, 
   sit: 123,
   nextDepth: 321,
-  nextTime: 123
 };
 const rl = repetLetter(divePlan);
 console.log(rl)
@@ -91,7 +118,6 @@ const divePlan = {
   bottomTime: 123, 
   sit: 123,
   nextDepth: 123,
-  nextTime: 123
 };
 const rnt = residualNitrogenTime(divePlan);
 console.log(rnt)

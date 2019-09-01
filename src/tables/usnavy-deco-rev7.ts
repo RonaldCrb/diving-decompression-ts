@@ -5841,10 +5841,10 @@ const usNavyAirDecompressionTable: ITableAirDeco = {
         },
       ],
     },
-    {
+    /*{
       minfsw: 211,
       maxfsw: 220,
-      rows: [/*
+      rows: [
         {
           minTime: 1,
           maxTime: 5,
@@ -6140,7 +6140,7 @@ const usNavyAirDecompressionTable: ITableAirDeco = {
           ],
         },
       ],
-    },
+    },*/
     // page 514 210 fsw*****************************
   ],
 };

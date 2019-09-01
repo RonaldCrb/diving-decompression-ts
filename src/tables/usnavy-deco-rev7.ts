@@ -5290,14 +5290,8 @@ const usNavyAirDecompressionTable: ITableAirDeco = {
           exceptionalExposure: true,
           surDo2Req: true,
           strictlySurDo2: true,
-          airDecoStops: [
-            { depth: 20, time: 8 }, 
-            { depth: 30, time: 3 }
-          ],
-          o2decoStops: [
-            { depth: 20, time: 4 }, 
-            { depth: 30, time: 2 }
-          ],
+          airDecoStops: [{ depth: 20, time: 8 }, { depth: 30, time: 3 }],
+          o2decoStops: [{ depth: 20, time: 4 }, { depth: 30, time: 2 }],
         },
         {
           minTime: 11,
@@ -5317,12 +5311,7 @@ const usNavyAirDecompressionTable: ITableAirDeco = {
             { depth: 40, time: 3 },
             { depth: 50, time: 2 },
           ],
-          o2decoStops: [
-            { depth: 20, time: 9 }, 
-            { depth: 30, time: 3 }, 
-            { depth: 40, time: 3 }, 
-            { depth: 50, time: 2 }
-          ],
+          o2decoStops: [{ depth: 20, time: 9 }, { depth: 30, time: 3 }, { depth: 40, time: 3 }, { depth: 50, time: 2 }],
         },
         {
           minTime: 16,
@@ -5370,7 +5359,6 @@ const usNavyAirDecompressionTable: ITableAirDeco = {
             { depth: 50, time: 6 },
             { depth: 60, time: 5 },
             { depth: 70, time: 1 },
-
           ],
           o2decoStops: [
             { depth: 20, time: 32 },
@@ -5379,7 +5367,6 @@ const usNavyAirDecompressionTable: ITableAirDeco = {
             { depth: 50, time: 6 },
             { depth: 60, time: 5 },
             { depth: 70, time: 1 },
-
           ],
         },
         {
@@ -5557,12 +5544,8 @@ const usNavyAirDecompressionTable: ITableAirDeco = {
           exceptionalExposure: true,
           surDo2Req: true,
           strictlySurDo2: true,
-          airDecoStops: [
-            { depth: 20, time: 2 }, 
-          ],
-          o2decoStops: [
-            { depth: 20, time: 1 }, 
-          ],
+          airDecoStops: [{ depth: 20, time: 2 }],
+          o2decoStops: [{ depth: 20, time: 1 }],
         },
         {
           minTime: 6,
@@ -5576,16 +5559,8 @@ const usNavyAirDecompressionTable: ITableAirDeco = {
           exceptionalExposure: true,
           strictlySurDo2: true,
           surDo2Req: true,
-          airDecoStops: [
-            { depth: 20, time: 9 },
-            { depth: 30, time: 3 },
-            { depth: 40, time: 2 },
-          ],
-          o2decoStops: [
-            { depth: 20, time: 4 }, 
-            { depth: 30, time: 2 }, 
-            { depth: 40, time: 2 }, 
-          ],
+          airDecoStops: [{ depth: 20, time: 9 }, { depth: 30, time: 3 }, { depth: 40, time: 2 }],
+          o2decoStops: [{ depth: 20, time: 4 }, { depth: 30, time: 2 }, { depth: 40, time: 2 }],
         },
         {
           minTime: 11,
@@ -5633,7 +5608,6 @@ const usNavyAirDecompressionTable: ITableAirDeco = {
             { depth: 50, time: 5 },
             { depth: 60, time: 3 },
             { depth: 70, time: 1 },
-
           ],
           o2decoStops: [
             { depth: 20, time: 23 },
@@ -5642,7 +5616,6 @@ const usNavyAirDecompressionTable: ITableAirDeco = {
             { depth: 50, time: 5 },
             { depth: 60, time: 3 },
             { depth: 70, time: 1 },
-
           ],
         },
         {

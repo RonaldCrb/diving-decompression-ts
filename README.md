@@ -125,13 +125,11 @@ console.log(rnt)
 
 ## Road Map Specific Objectives
 
-1. finish dive tables for decompression diving.
+1. to develop a series of return objects with the specific guidelines that are relevant to the specific dive profile introduced.
 
-2. to develop a series of return objects with the specific guidelines that are relevant to the specific dive profile introduced.
+2. to develop a series of graphical charts to represent the decompression profiles.
 
-3. to develop a series of graphical charts to represent the decompression profiles.
-
-4. to develop a series of specific errors and warning objects relevant to the profile introduced.
+3. to develop a series of specific errors and warning objects relevant to the profile introduced.
 
 ## License
 [MPL-2.0](https://choosealicense.com/licenses/mpl-2.0/)

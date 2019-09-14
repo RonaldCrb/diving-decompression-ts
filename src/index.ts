@@ -109,15 +109,15 @@ export const decoDive = ({ bottomTime, depth }: IDive): IRowDeco | string => {
     },
   );
   if (table) {
-    const decoObject: IRowDeco | undefined = _.find(table.rows, (element: IRowDeco): boolean => {
+    const decoProfile: IRowDeco | undefined = _.find(table.rows, (element: IRowDeco): boolean => {
       return element.minTime <= bottomTime && bottomTime <= element.maxTime;
     });
-    if (decoObject) {
-      return decoObject;
+    if (decoProfile) {
+      return decoProfile;
     } else {
-      return 'no decoObject Matched';
+      return 'no deco profile Found';
     }
   } else {
-    return 'No Table Matched';
+    return 'No Table Found';
   }
 };

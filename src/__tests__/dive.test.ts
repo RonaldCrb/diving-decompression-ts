@@ -225,7 +225,7 @@ test('decoDive 1000/135 => No Table Matched', () => {
     sit: 250,
     nextDepth: 69,
   };
-  expect(decoDive(dive)).toBe('No Table Matched');
+  expect(decoDive(dive)).toBe('No Table Found');
 });
 
 test('decoDive 100/1305 => no decoObject Matched', () => {
@@ -235,7 +235,7 @@ test('decoDive 100/1305 => no decoObject Matched', () => {
     sit: 250,
     nextDepth: 69,
   };
-  expect(decoDive(dive)).toBe('no decoObject Matched');
+  expect(decoDive(dive)).toBe('no deco profile Found');
 });
 
 test('decoDive 69/130 => decoObject', () => {

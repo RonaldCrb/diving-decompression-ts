@@ -8,6 +8,8 @@ this module is under construction, it is **__NOT__** suitable for usage in real 
 ## Sources
 the main source for this module is the [US Navy Diving Manual](https://en.wikipedia.org/wiki/U.S._Navy_Diving_Manual "US Navy Diving Manual Rev7"), which is __the most comprehensive resource__ for educational and operational reference in the diving industry. you can find a copy of the 7th revision of this manual in this repository
 
+## EXAMPLE: https://cdlogs.org
+
 ## Compatibility
 
 You can install this module in __ANY__ Javascript or Typescript project. it is written in Typescript, targeting ES6 and it was initially designed to be used along Javascript Frontend Frameworks or libraries (eg. React, Angular or Vue), but it can also be used perfectly with Nodejs programs on the server side... 

@@ -1,5 +1,7 @@
 import { decoDive, groupLetter, noDecompressionLimit, repetLetter, residualNitrogenTime } from '../index';
 
+const mainError = '[Error: Cannot find correct profile for the given parameters]'
+
 // **************************************************************************************************
 // noDecompressionLimit 5 Tests
 test('noDecompressionLimit 147', () => {
@@ -26,12 +28,12 @@ test('noDecompressionLimit 33', () => {
   expect(noDecompressionLimit(dive)).toBe(232);
 });
 
-test('noDecompressionLimit 98 undefined', () => {
+test('noDecompressionLimit 98 Error message', () => {
   const dive = {
     bottomTime: 300,
     depth: -1,
   };
-  expect(noDecompressionLimit(dive)).toBe(undefined);
+  expect(noDecompressionLimit(dive)).toBe(Error);
 });
 
 test('noDecompressionLimit 200 undefined', () => {
@@ -213,8 +215,18 @@ test('decoDive 99/135 decoObject', () => {
     surDo2Req: true,
     strictlySurDo2: true,
     exceptionalExposure: true,
-    airDecoStops: [{ depth: 20, time: 461 }, { depth: 30, time: 46 }, { depth: 40, time: 26 }, { depth: 50, time: 3 }],
-    o2decoStops: [{ depth: 20, time: 109 }, { depth: 30, time: 23 }, { depth: 40, time: 26 }, { depth: 50, time: 3 }],
+    airDecoStops: [
+      { depth: 20, time: 461 },
+      { depth: 30, time: 46 },
+      { depth: 40, time: 26 },
+      { depth: 50, time: 3 },
+    ],
+    o2decoStops: [
+      { depth: 20, time: 109 },
+      { depth: 30, time: 23 },
+      { depth: 40, time: 26 },
+      { depth: 50, time: 3 },
+    ],
   });
 });
 

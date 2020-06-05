@@ -17,7 +17,7 @@ export const createFile = (filename: string, table: any) => {
     });
   }
 
-createFile('usnavy-air-deco-rev7.json', usNavyAirDecompressionTable)
-createFile('usnavy-air-nodeco-rev7.json', usNavyNoDecoRepetGroup)
-createFile('usnavy-air-repetgroup-rev7.json', privateusNavyRepetGroupLetter)
-createFile('usnavy-air-rnt-rev7.json', usNavyResidualNitrogenTime)
+createFile('src/serializer/usnavy-air-deco-rev7.json', usNavyAirDecompressionTable)
+createFile('src/serializer/usnavy-air-nodeco-rev7.json', usNavyNoDecoRepetGroup)
+//createFile('usnavy-air-repetgroup-rev7.json', privateusNavyRepetGroupLetter)
+//createFile('usnavy-air-rnt-rev7.json', usNavyResidualNitrogenTime)

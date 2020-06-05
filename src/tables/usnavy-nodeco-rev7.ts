@@ -9,7 +9,7 @@ const usNavyNoDecoRepetGroup: ITableNdl = {
       minfsw: 0,
       maxfsw: 10,
       unlimited: true,
-      noStopLimit: 'unlimited',
+      noStopLimit: 9999,
       values: [
         { groupLetter: 'A', minTime: 0, maxTime: 57 },
         {
@@ -43,7 +43,7 @@ const usNavyNoDecoRepetGroup: ITableNdl = {
       minfsw: 11,
       maxfsw: 15,
       unlimited: true,
-      noStopLimit: 'unlimited',
+      noStopLimit: 9999,
       values: [
         {
           groupLetter: 'A',
@@ -96,7 +96,7 @@ const usNavyNoDecoRepetGroup: ITableNdl = {
       minfsw: 16,
       maxfsw: 20,
       unlimited: true,
-      noStopLimit: 'unlimited',
+      noStopLimit: 9999,
       values: [
         {
           groupLetter: 'A',

@@ -80,8 +80,8 @@ export interface IRowDeco {
   repetLetter: string;
   surDo2Recom: boolean;
   exceptionalExposure: boolean;
-  surDo2Req?: boolean;
-  strictlySurDo2?: boolean;
+  surDo2Req: boolean;
+  strictlySurDo2: boolean;
   airDecoStops: IDecoStops[];
   o2decoStops: IDecoStops[];
 }
